@@ -1,7 +1,8 @@
 body {
-  height: 100vh;
-  background: linear-gradient(#393E46,#4ECCA3);
-  margin-top: 80px;
+  height: 89vh;
+  background: linear-gradient(#021e24,#76d3e8);
+  /* margin-top: 80px; */
+  /* background-size: 100% 50%; */
 }
 
 .container {
@@ -21,21 +22,31 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin: 100px 30px 80px 30px;
   font-family: 'Lobster', cursive;
-  text-shadow: 5px 0 #232931;
+  text-shadow: 5px 0 #06020d;
   font-size: 6rem;
-  color: #4ECCA3;
+  color: #a8e3f0;
 }
 
 p {
   font-size: 2rem;
-  color: #4ECCA3;
+  color: #a8e3f0;
   font-family: 'Indie Flower', cursive;
 }
 
+@keyframes example {
+  0%   {transform: rotate(8deg);}
+  50%  {transform: rotate(-8deg);}
+  100% {transform: rotate(8deg);}
+}
+
 img {
-  width: 80%;
+  width: 60%;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 footer {
